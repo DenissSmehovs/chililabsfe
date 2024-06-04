@@ -1,0 +1,10 @@
+{
+    "product": [
+      { "id": "1", "title": "iPhone11","category": "mobile", "price": 1150, "description": "Brand new iPhone11" },
+      { "id": "2", "title": "iPhone12","category": "mobile", "price": 1200, "description": "Brand new iPhone12" },
+      { "id": "3", "title": "iPhone13","category": "mobile", "price": 1300, "description": "Brand new iPhone13" },
+      { "id": "4", "title": "iPhone14","category": "mobile", "price": 1400, "description": "Brand new iPhone14" },
+      { "id": "5", "title": "iPhone15","category": "mobile", "price": 1500, "description": "Brand new iPhone15" },
+      { "id": "6", "title": "Android","category": "mobile", "price": 1700, "description": "Brand new GalaxyS21" }
+    ]
+  }
