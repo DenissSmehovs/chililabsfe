@@ -1,4 +1,3 @@
-// /src/app/catalog/category/page.tsx
 
 import React from 'react';
 import Category from '@/app/category/category';

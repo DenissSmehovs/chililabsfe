@@ -1,5 +1,3 @@
-// app/components/Product.tsx
-
 import Link from 'next/link';
 import React from 'react';
 
