@@ -1,1 +1,24 @@
-This project leverages Next.js ISR caching to optimize database queries and reduce server load. With dynamic search functionality in the category section, users can conveniently receive search results after a brief delay. Moreover, dynamic routing enhances the overall user experience, ensuring smooth navigation throughout the application. Powered by React, this project offers efficient and responsive web development solutions.
+Product List App
+
+This is a simple Product List application built with React and Next.js, utilizing Tailwind CSS for styling and json-server for a mock backend API.
+Features
+
+    Display a list of products with images, titles, prices, categories, and additional details.
+    Search functionality to filter products by name.
+    Responsive design using Tailwind CSS.
+
+    1.Install dependencies:
+    npm install
+
+    2.Install json-server globally:
+    npm install -g json-server
+
+    Running the Application
+
+    1.Start the mock API server:
+    json-server --watch db.json --port 3004
+
+    2.Start the development server:
+    npm run dev
+
+    3.Open your browser and navigate to http://localhost:3000/category to view the application.

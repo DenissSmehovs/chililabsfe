@@ -8,21 +8,24 @@ interface ProductData {
   price: number;
   category: string;
   description: string;
+  image: string;
 }
 
 const fetchData = async (): Promise<ProductData[]> => {
-  const response = await fetch('http://localhost:3004/product', {
-    next: { revalidate: 2 }
-  });
+  try {
+    const response = await fetch('http://localhost:3004/product', {
+      next: { revalidate: 10 } //Cache update. Should be set as needed.
+    });
 
-  if (!response.ok) {
-    throw new Error('Network response was not ok');
+    const data: ProductData[] = await response.json();
+    return data;
+
+  } catch (error) {
+    console.error('Error fetching product data:', error);
+    throw error;
   }
-
-  const data: ProductData[] = await response.json();
-  console.log(data);
-  return data;
 };
+
 
 const Page = async () => {
   const data = await fetchData();
