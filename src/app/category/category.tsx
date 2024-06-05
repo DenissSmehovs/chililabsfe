@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState, useEffect } from 'react';
-import Product from '../components/Product'
+import ProductList from '../components/ProductList'
 import ProductSinglePage from './[id]/page';
 
 interface ProductData {
@@ -51,7 +51,7 @@ const Catalog: React.FC<ProductsProps> = ({ productsData }) => {
         <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
           {filteredData && filteredData.length > 0 ? (
             filteredData.map(({ id, title, price, category, image }) => (
-              <Product key={id} id={id} title={title} price={price} category={category} image = {image}/>
+              <ProductList key={id} id={id} title={title} price={price} category={category} image = {image}/>
             ))
           ) : (
             <p>No products found</p>
